@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴 - Cafe Dream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 상단 유틸리티 메뉴 -->
+    <div class="utility-nav">
+        <div class="container">
+            <div class="left">
+                <a href="#"><i class="fas fa-phone"></i> 02-123-4567</a>
+                <a href="#"><i class="fas fa-envelope"></i> contact@cafedream.com</a>
+            </div>
+            <div class="right">
+                <a href="#"><i class="fas fa-user"></i> 로그인</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> 매장찾기</a>
+                <a href="#"><i class="fas fa-gift"></i> 멤버십</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Cafe Dream</a>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="menu.html" class="active">메뉴</a></li>
+                <li><a href="index.html#membership">멤버십</a></li>
+                <li><a href="index.html#store">매장</a></li>
+                <li><a href="brand.html">브랜드</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- 메뉴 섹션 -->
+    <section class="menu-page-section">
+        <h1 class="section-title">카페드림 메뉴</h1>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">전체</button>
+            <button class="category-btn" data-category="coffee">커피</button>
+            <button class="category-btn" data-category="beverage">음료</button>
+            <button class="category-btn" data-category="dessert">디저트</button>
+        </div>
+        <div class="new-menu-grid">
+            <!-- 커피 메뉴 -->
+            <div class="new-menu-item animate fade-in-up" data-category="coffee">
+                <div class="menu-image">
+                    <img src="https://www.woorinews.co.kr/news/photo/202407/54820_58866_2943.png" alt="아메리카노">
+                    <div class="ice-badge">ICE/HOT</div>
+                </div>
+                <div class="menu-info">
+                    <h3>아메리카노</h3>
+                    <p>깊은 풍미의 에스프레소와 물의 조화</p>
+                    <span class="price">4,500원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>용량</span>
+                                <span>450ml</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>10kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>카페인</span>
+                                <span>150mg</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            최상급 아라비카 원두로 추출한 에스프레소에 물을 더해 깔끔하고 깊은 맛을 즐길 수 있는 메뉴
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+
+            <div class="new-menu-item animate fade-in-up" data-category="coffee">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1534687941688-651ccaafbff8?w=500" alt="카페라떼">
+                    <div class="ice-badge">ICE/HOT</div>
+                </div>
+                <div class="menu-info">
+                    <h3>카페라떼</h3>
+                    <p>부드러운 우유와 에스프레소의 완벽한 밸런스</p>
+                    <span class="price">5,000원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>용량</span>
+                                <span>450ml</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>110kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>카페인</span>
+                                <span>150mg</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            진한 에스프레소와 부드러운 우유가 조화롭게 어우러진 클래식한 카페라떼
+                        </div>
+                        <div class="allergens">
+                            알레르기 유발 성분: 우유
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+
+            <!-- 음료 메뉴 -->
+            <div class="new-menu-item animate fade-in-up" data-category="beverage">
+                            <div class="menu-image">
+                <img src="https://images.unsplash.com/photo-1577805947697-89e18249d767?w=500" alt="초코라떼">
+                <div class="ice-badge">ICE/HOT</div>
+            </div>
+
+                <div class="menu-info">
+                    <h3>초코라떼</h3>
+                    <p>진한 초콜릿과 부드러운 우유의 달콤한 만남</p>
+                    <span class="price">5,500원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>용량</span>
+                                <span>450ml</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>320kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>당류</span>
+                                <span>28g</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            프리미엄 초콜릿 파우더와 신선한 우유로 만든 달콤한 초코라떼
+                        </div>
+                        <div class="allergens">
+                            알레르기 유발 성분: 우유, 대두
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+
+            <div class="new-menu-item animate fade-in-up" data-category="beverage">
+                <div class="menu-image">
+                    <img src="https://cdn.imweb.me/upload/S20230918968d160609000/952d19eacbe9a.png" alt="딸기 스무디">
+                    <div class="ice-badge">ICE</div>
+                </div>
+                <div class="menu-info">
+                    <h3>딸기 스무디</h3>
+                    <p>신선한 딸기의 상큼함이 가득한 스무디</p>
+                    <span class="price">6,000원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>용량</span>
+                                <span>500ml</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>280kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>당류</span>
+                                <span>45g</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            생딸기와 우유, 연유가 조화롭게 어우러진 시원하고 달콤한 스무디
+                        </div>
+                        <div class="allergens">
+                            알레르기 유발 성분: 우유
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+
+            <!-- 디저트 메뉴 -->
+            <div class="new-menu-item animate fade-in-up" data-category="dessert">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500" alt="티라미수">
+                    <div class="menu-badge">BEST</div>
+                </div>
+                <div class="menu-info">
+                    <h3>티라미수</h3>
+                    <p>부드러운 마스카포네 치즈와 에스프레소의 환상적인 조화</p>
+                    <span class="price">6,500원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>중량</span>
+                                <span>150g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>380kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>당류</span>
+                                <span>25g</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            이탈리아 전통 방식으로 만든 티라미수로, 진한 에스프레소와 부드러운 마스카포네 치즈의 완벽한 조화
+                        </div>
+                        <div class="allergens">
+                            알레르기 유발 성분: 우유, 계란, 대두
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+
+            <div class="new-menu-item animate fade-in-up" data-category="dessert">
+                <div class="menu-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Croffles_5.jpg/960px-Croffles_5.jpg" alt="크로플">
+                    <div class="menu-badge">NEW</div>
+                </div>
+                <div class="menu-info">
+                    <h3>크로플</h3>
+                    <p>바삭하고 달콤한 크로와플</p>
+                    <span class="price">4,800원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>중량</span>
+                                <span>180g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>420kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>당류</span>
+                                <span>15g</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            크로와상 반죽을 와플 기계에 구워 더욱 바삭하고 달콤한 크로플. 메이플 시럽과 함께 제공
+                        </div>
+                        <div class="allergens">
+                            알레르기 유발 성분: 밀, 우유, 계란
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+            <!-- 새로운 메뉴 추가 -->
+            <div class="new-menu-item animate fade-in-up" data-category="coffee">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1594261956806-3ad03785c9b4?w=500" alt="라벤더 카페라떼">
+                    <div class="ice-badge">ICE/HOT</div>
+                </div>
+                <div class="menu-info">
+                    <h3>라벤더 카페라떼</h3>
+                    <p>라벤더 허브티와 밀크티를 믹스한 베이스에 고소한 우유를 더해 깔끔하게 즐기는 에스프레소</p>
+                    <span class="price">5,800원</span>
+                    <button class="order-button">주문하기</button>
+                </div>
+            </div>
+
+            <div class="new-menu-item animate fade-in-up" data-category="beverage">
+                <div class="menu-image">
+                    <img src="https://image.aladin.co.kr/product/29285/7/cover500/p282936698_1.jpg" alt="그린티 레몬 에이드">
+                    <div class="ice-badge">ICE</div>
+                </div>
+                <div class="menu-info">
+                    <h3>그린티 레몬 에이드</h3>
+                    <p>은은한 그린티에 상큼한 레몬으로 청량함을 더한 시원한 에이드</p>
+                    <span class="price">5,500원</span>
+                    <button class="order-button">주문하기</button>
+                </div>
+            </div>
+
+            <div class="new-menu-item animate fade-in-up" data-category="beverage">
+                <div class="menu-image">
+                    <img src="https://d2afncas1tel3t.cloudfront.net/wp-content/uploads/2025/04/%EC%88%98%EB%B0%95%EC%A3%BC%EC%8A%A4-%EC%8D%B8%EB%84%AC.jpg" alt="수박 주스">
+                    <div class="ice-badge">ICE</div>
+                </div>
+                <div class="menu-info">
+                    <h3>수박 주스</h3>
+                    <p>달콤한 생수박을 갈아 만든 시원하고 청량한 여름 시즌 음료</p>
+                    <span class="price">6,000원</span>
+                    <button class="order-button">주문하기</button>
+                </div>
+            </div>
+
+            <div class="new-menu-item animate fade-in-up" data-category="beverage">
+                <div class="menu-image">
+                    <img src="https://www.rendejavous.com/bizdemo125449/component/board/board_7/u_image/92/17956080_Red-Dragon-Fruit-Ade_360.jpg" alt="트로피컬 용과 에이드">
+                    <div class="ice-badge">ICE</div>
+                </div>
+                <div class="menu-info">
+                    <h3>트로피컬 용과 에이드</h3>
+                    <p>달콤하고 이국적인 용과와 트로피컬 과일의 상큼한 만남</p>
+                    <span class="price">5,500원</span>
+                    <button class="order-button">주문하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>카페드림</h3>
+                <p>특별한 커피, 특별한 순간</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 02-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> contact@cafedream.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 테헤란로 123</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>메뉴</h4>
+                    <a href="#coffee">커피</a>
+                    <a href="#beverage">음료</a>
+                    <a href="#food">푸드</a>
+                    <a href="#goods">상품</a>
+                </div>
+                <div class="link-group">
+                    <h4>고객지원</h4>
+                    <a href="#faq">자주 묻는 질문</a>
+                    <a href="#contact">문의하기</a>
+                    <a href="#privacy">개인정보처리방침</a>
+                    <a href="#terms">이용약관</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 카페드림. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 생일 무료 음료 팝업 -->
+    <div id="birthdayModal" class="birthday-modal">
+        <div class="birthday-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <h2>🎉 생일 무료 음료 안내 🎉</h2>
+            <div class="modal-body">
+                <p class="highlight-text">회원님의 생일에 받을 수 있는 특별한 혜택!</p>
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-gift"></i>
+                        <p>선택하신 음료 무료 제공</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-arrow-up"></i>
+                        <p>사이즈 무료 업그레이드</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>토핑 1개 무료 추가</p>
+                    </div>
+                </div>
+                <div class="modal-notice">
+                    <p>* 생일 당일에만 사용 가능합니다.</p>
+                    <p>* 멤버십 회원에게만 제공되는 혜택입니다.</p>
+                    <p>* 매장 방문 시 멤버십 카드 또는 앱 제시 필수</p>
+                </div>
+            </div>
+            <button class="modal-button">멤버십 가입하기</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

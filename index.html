@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페 드림</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 상단 유틸리티 메뉴 -->
+    <div class="utility-nav">
+        <div class="container">
+            <div class="left">
+                <a href="#"><i class="fas fa-phone"></i> 02-123-4567</a>
+                <a href="#"><i class="fas fa-envelope"></i> contact@cafedream.com</a>
+            </div>
+            <div class="right">
+                <a href="#"><i class="fas fa-user"></i> 로그인</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> 매장찾기</a>
+                <a href="#"><i class="fas fa-gift"></i> 멤버십</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">카페드림</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">홈</a></li>
+                <li><a href="brand.html">브랜드</a></li>
+                <li><a href="menu.html">메뉴</a></li>
+                <li><a href="#store">매장</a></li>
+                <li><a href="#membership">멤버십</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="hero-content">
+                    <h2 class="animate fade-in-up">특별한 당신을 위한<br>특별한 공간</h2>
+                    <p class="animate fade-in-up delay-1">최고급 원두로 만든 커피와 편안한 분위기</p>
+                    <div class="cta-buttons animate fade-in-up delay-2">
+                        <a href="menu.html" class="cta-button primary">메뉴 보기</a>
+                        <a href="#store" class="cta-button secondary">매장 찾기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- 신메뉴 섹션 -->
+    <section id="new-menu" class="new-menu-section">
+        <h2 class="section-title animate fade-in">이 달의 신메뉴</h2>
+        <div class="new-menu-grid">
+            <div class="new-menu-item animate fade-in-up delay-1">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="시그니처 라떼">
+                    <div class="menu-badge">NEW</div>
+                    <div class="ice-badge">ICE</div>
+                </div>
+                <div class="menu-info">
+                    <h3>시그니처 라떼</h3>
+                    <p>부드러운 우유 거품과 진한 에스프레소의 완벽한 조화</p>
+                    <span class="price">5,500원</span>
+                    <div class="menu-details">
+                        <div class="nutrition-info">
+                            <div class="nutrition-item">
+                                <span>용량</span>
+                                <span>591ml</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>칼로리</span>
+                                <span>380kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>당류</span>
+                                <span>35g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span>카페인</span>
+                                <span>150mg</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            프리미엄 원두로 추출한 에스프레소와 신선한 우유가 만나 깊은 풍미를 선사하는 시그니처 메뉴입니다.
+                        </div>
+                        <div class="allergens">
+                            알레르기 유발 성분: 우유
+                        </div>
+                    </div>
+                    <button class="order-button">주문하기</button>
+                </div>
+                <div class="close-details">&times;</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 멤버십 섹션 -->
+    <section id="membership" class="membership-section">
+        <div class="membership-content">
+            <div class="left-content animate slide-in-left">
+                <h2>멤버십 혜택</h2>
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-gift"></i>
+                        <h3>포인트 적립</h3>
+                        <p>결제 금액의 5% 적립</p>
+                    </div>
+                    <div class="benefit-item free-drink-btn" style="cursor: pointer;">
+                        <i class="fas fa-coffee"></i>
+                        <h3>무료 음료</h3>
+                        <p>매월 생일자 무료 음료 제공</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-percent"></i>
+                        <h3>할인 혜택</h3>
+                        <p>시즌 메뉴 20% 할인</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content animate slide-in-right">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500" alt="멤버십 카드">
+            </div>
+        </div>
+    </section>
+
+    <!-- 매장 찾기 섹션 -->
+    <section id="store" class="store-section">
+        <h2 class="section-title animate fade-in">매장 찾기</h2>
+        <div class="store-search">
+            <input type="text" placeholder="지역명 또는 매장명을 입력하세요" class="search-input">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="store-map">
+            <!-- 지도 API 들어갈 자리 -->
+            <div class="map-placeholder animate fade-in">
+                <img src="https://images.unsplash.com/photo-1553290322-0440b3457f0c?w=500" alt="매장 위치">
+            </div>
+        </div>
+    </section>
+
+    <!-- 브랜드 스토리 섹션 제거 -->
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>카페 드림</h3>
+                <p>특별한 커피, 특별한 순간</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 02-123-4567</p>
+                    <p><i class="fas fa-envelope"></i> contact@cafedream.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 테헤란로 123</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>메뉴</h4>
+                    <a href="#coffee">커피</a>
+                    <a href="#beverage">음료</a>
+                    <a href="#food">푸드</a>
+                    <a href="#goods">상품</a>
+                </div>
+                <div class="link-group">
+                    <h4>고객지원</h4>
+                    <a href="#faq">자주 묻는 질문</a>
+                    <a href="#contact">문의하기</a>
+                    <a href="#privacy">개인정보처리방침</a>
+                    <a href="#terms">이용약관</a>
+                </div>
+                <div class="link-group">
+                    <h4>소셜미디어</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2024 카페 드림. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 스크롤 애니메이션을 위한 JavaScript -->
+    <script>
+        // 기존 스크롤 애니메이션 코드 유지
+
+        // 슬라이더 기능
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        });
+
+        // 자동 슬라이드
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // 드롭다운 메뉴
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.querySelector('.dropdown-content').style.display = 'block';
+            });
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.querySelector('.dropdown-content').style.display = 'none';
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+
+    <!-- 생일 무료 음료 팝업 -->
+    <div id="birthdayModal" class="birthday-modal">
+        <div class="birthday-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-birthday-cake"></i>
+            </div>
+            <h2>🎉 생일 무료 음료 안내 🎉</h2>
+            <div class="modal-body">
+                <p class="highlight-text">회원님의 생일에 받을 수 있는 특별한 혜택!</p>
+                <div class="benefit-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-gift"></i>
+                        <p>선택하신 음료 무료 제공</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-arrow-up"></i>
+                        <p>사이즈 무료 업그레이드</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>토핑 1개 무료 추가</p>
+                    </div>
+                </div>
+                <div class="modal-notice">
+                    <p>* 생일 당일에만 사용 가능합니다.</p>
+                    <p>* 멤버십 회원에게만 제공되는 혜택입니다.</p>
+                    <p>* 매장 방문 시 멤버십 카드 또는 앱 제시 필수</p>
+                </div>
+            </div>
+            <button class="modal-button">멤버십 가입하기</button>
+        </div>
+    </div>
+</body>
+</html> 

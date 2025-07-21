@@ -48,7 +48,10 @@ body {
     color: var(--color-primary);
     font-size: 1.5rem;
     font-weight: bold;
+<<<<<<< HEAD
     text-decoration: none;  /* 밑줄 제거 */
+=======
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 }
 
 .nav-links {
@@ -773,6 +776,7 @@ section {
 
 .ice-badge {
     position: absolute;
+<<<<<<< HEAD
     top: 1rem;
     right: 1rem;
     background: rgba(255, 255, 255, 0.9);
@@ -784,6 +788,16 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     min-width: 60px;  /* 최소 너비 설정 */
     text-align: center;  /* 텍스트 중앙 정렬 */
+=======
+    bottom: 1rem;
+    right: 1rem;
+    background: #007bff;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 }
 
 .close-details {
@@ -826,6 +840,7 @@ section {
 /* 멤버십 섹션 */
 .membership-section {
     background-color: var(--color-background-alt);
+<<<<<<< HEAD
     padding: 3rem 2rem;  /* 패딩 줄임 */
 }
 
@@ -860,6 +875,24 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
+=======
+    padding: 5rem 2rem;
+}
+
+.membership-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
     margin-top: 2rem;
 }
 
@@ -1036,17 +1069,30 @@ section {
 
 .value-card {
     perspective: 1000px;
+<<<<<<< HEAD
     background: transparent;
     height: 300px;  /* 카드 높이 설정 */
 }
 
 .card-inner {
+=======
+    height: 300px;
+}
+
+.value-card .card-inner {
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
+<<<<<<< HEAD
     transition: transform 0.8s;
     transform-style: preserve-3d;
+=======
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 }
 
 .value-card:hover .card-inner {
@@ -1058,6 +1104,7 @@ section {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+<<<<<<< HEAD
     background: white;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1084,6 +1131,42 @@ section {
 
 .card-back p {
     font-size: 1.1rem;
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: var(--color-background);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: var(--color-background);
+}
+
+.card-back {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    transform: rotateY(180deg);
+}
+
+.icon-wrapper {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.card-back p {
+    font-size: 1.2rem;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
     line-height: 1.6;
 }
 
@@ -1509,6 +1592,7 @@ section {
     gap: 2rem;
 }
 
+<<<<<<< HEAD
 .new-menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1631,12 +1715,31 @@ section {
     .menu-info p {
         font-size: 0.9rem;
     }
+=======
+@media (max-width: 768px) {
+    .menu-page-section {
+        padding-top: 100px;
+    }
+
+    .category-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .menu-page-section .new-menu-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 } 
 
  
 
 /* 생일 무료 음료 팝업 스타일 */
+<<<<<<< HEAD
 /* 생일 무료 음료 모달 스타일 수정 */
+=======
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 .birthday-modal {
     display: none;
     position: fixed;
@@ -1646,6 +1749,7 @@ section {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
+<<<<<<< HEAD
     overflow-y: auto;
     padding: 20px;
 }
@@ -1693,10 +1797,69 @@ section {
     color: var(--color-secondary);
     text-align: center;
     margin: 20px 0;
+=======
+}
+
+.birthday-modal-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: modalSlideDown 0.3s ease-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes modalSlideDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.modal-icon {
+    font-size: 48px;
+    color: #FF6B6B;
+    margin-bottom: 20px;
+}
+
+.birthday-modal h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.highlight-text {
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 }
 
 .benefit-list {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 30px 0;
@@ -1773,11 +1936,54 @@ section {
 
 .modal-button:hover {
     background-color: #8B6B4E;
+=======
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--color-background-alt);
+    border-radius: 10px;
+}
+
+.modal-notice {
+    background: rgba(162, 123, 92, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.modal-notice p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+}
+
+.modal-button {
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #ff5252;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
     transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
     .birthday-modal-content {
+<<<<<<< HEAD
         padding: 20px;
         margin: 10px auto;
     }
@@ -1792,6 +1998,30 @@ section {
 
     .highlight-text {
         font-size: 1.2rem;
+=======
+        width: 95%;
+        padding: 2rem;
+        margin: 10px auto;
+    }
+    
+    .birthday-modal h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .highlight-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .benefit-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .benefit-item {
+        padding: 0.8rem;
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
     }
 } 
 
@@ -1847,6 +2077,7 @@ section {
     .benefits-container .benefit-item {
         width: 100%;
     }
+<<<<<<< HEAD
 } 
 
 /* 혜택 모달 스타일 */
@@ -2037,4 +2268,6 @@ section {
         text-align: center;
         gap: 5px;
     }
+=======
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 } 

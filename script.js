@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('멤버십 가입 페이지로 이동합니다.');
         });
     });
+<<<<<<< HEAD
 }); 
 
 // 혜택 모달 관련 코드
@@ -273,4 +274,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 초기 로드 시 실행
     updateNavigation();
+=======
+>>>>>>> 2bb4ec546ef6ba62f1f9742cfd58b537a8393d3a
 }); 
